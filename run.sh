@@ -3,10 +3,12 @@
 # SPDX-License-Identifier: MIT
 # Copyright (c): 2026, The Scout from Team Fortress 2
 
-PROJECT_FOLDER="fivenights"
+PROJECT_FOLDER="./fivenights"
 
 main() {
     cd "$PROJECT_FOLDER"
+    # shellcheck disable=SC3046,SC1091
+    source "${PROJECT_FOLDER}/.venv/bin/activate"
     clear
     set -e
     python launcher.pyz client leaderboard -include_alumni && printf "\n"

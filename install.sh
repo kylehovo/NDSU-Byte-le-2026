@@ -6,7 +6,7 @@
 # Meant for Debian-based distros only
 
 PYTHON_VERSION="3.13"
-PROJECT_FOLDER="fivenights"
+PROJECT_FOLDER="./fivenights"
 PREVIOUS_PROJECT_FOLDER="${PROJECT_FOLDER}-prev"
 URL="https://github.com/acm-ndsu/Byte-le-2026-Client-Package/archive/refs/heads/main.zip"
 
