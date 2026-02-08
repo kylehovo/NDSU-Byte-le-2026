@@ -8,7 +8,7 @@
 # Sorry guys, no second UND sweep :(
 # (unless I lock in and learn all about A* today lmao).
 
-# This is the culumination of the past few months of self-discovery since I 
+# This is the culumination of the past few months of self-discovery since I
 # graduated UND really.
 
 # Let's just say I've learned I'm almost certainly not "normal".
@@ -16,7 +16,7 @@
 # It's so obvious in hindsight.
 
 # Who else would get nearly a 4.0 GPA and then dress up like the Scout?
-# Have an insane, undying thirst for knowledge at yet despite it all still 
+# Have an insane, undying thirst for knowledge at yet despite it all still
 # need to-do lists and documentation in clear, unambigious language?
 
 # I've learned today that I can do a lot on my own, but I can't do *everything*.
@@ -43,16 +43,22 @@ from game.constants import DIRECTION_TO_MOVE
 from game.utils.vector import Vector
 from typing import Dict, List, Tuple, Optional
 
-DIRECTIONS = [(1,0), (-1,0), (0,1), (0,-1)]
+DIRECTIONS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 Position = Tuple[int, int]
 
-def a_star_move(start: Vector, goal: Vector, world, allow_vents: bool = True, game_object: GameObject | None = None) -> ActionType | None:
+def a_star_move(
+    start: Vector,
+    goal: Vector,
+    world,
+    allow_vents: bool = True,
+    game_object: GameObject | None = None,
+) -> ActionType | None:
     path = a_star_path(
         start=start,
         goal=goal,
         world=world,
         allow_vents=allow_vents,
-        game_object=game_object
+        game_object=game_object,
     )
 
     if not path or len(path) < 2:
@@ -63,7 +69,14 @@ def a_star_move(start: Vector, goal: Vector, world, allow_vents: bool = True, ga
     action = DIRECTION_TO_MOVE.get(direction)
     return action
 
-def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_object: GameObject | None = None) -> Optional[List[Vector]]:
+
+def a_star_path(
+    start: Vector,
+    goal: Vector,
+    world,
+    allow_vents=True,
+    game_object: GameObject | None = None,
+) -> Optional[List[Vector]]:
     start_p = (start.x, start.y)
     goal_p = (goal.x, goal.y)
 
@@ -86,7 +99,9 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
             nxt = (current[0] + dx, current[1] + dy)
             vec = Vector(nxt[0], nxt[1])
 
-            if game_object is not None and not world.can_object_occupy(vec, game_object):
+            if game_object is not None and not world.can_object_occupy(
+                vec, game_object
+            ):
                 continue
 
             if not world.is_valid_coords(vec):
@@ -115,6 +130,7 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
 
     return None
 
+
 class Client(UserClient):
     luigi = False
 
@@ -130,7 +146,9 @@ class Client(UserClient):
 
     # Note that only the FIRST TWO actions will be actually be used by the engine.
     # An "infinite loop" for the duration of the game. Treat the return value second action as a "hold".
-    def take_turn(self, turn: int, world: GameBoard, avatar: Avatar) -> list[ActionType]:
+    def take_turn(
+        self, turn: int, world: GameBoard, avatar: Avatar
+    ) -> list[ActionType]:
         """
         This is where your AI will decide what to do.
         :param turn:        The current turn of the game.
@@ -142,11 +160,11 @@ class Client(UserClient):
         if self.luigi == True:
             return []
         else:
-            mikeSchmidt = [] # First Night
+            mikeSchmidt = [] # The First Night
 
         # See Enums: https://ndacm.org/Byte-le-Engine-v2-2026/enums.html
         allOptions = [
-            None, # Do nothing
+            None,                       # Do nothing
             ActionType.MOVE_UP,         # Move up one tile
             ActionType.MOVE_DOWN,       # Move down one tile
             ActionType.MOVE_LEFT,       # Move left one tile
@@ -162,7 +180,7 @@ class Client(UserClient):
 
         randomMove = random.choice(movementOptions)
         randomInteract = random.choice(interactOptions)
-        
+
         nextMove = randomMove
         nextInteract = randomInteract
 
