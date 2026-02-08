@@ -4,11 +4,12 @@
 # Copyright (c): 2026, The Scout from Team Fortress 2
 
 PROJECT_FOLDER="./fivenights"
+set -e
 
 main() {
+    # shellcheck disable=SC1091
+    . "${PROJECT_FOLDER}/.venv/bin/activate"
     cd "$PROJECT_FOLDER"
-    # shellcheck disable=SC3046,SC1091
-    source "${PROJECT_FOLDER}/.venv/bin/activate"
     clear
     set -e
     python launcher.pyz client leaderboard -include_alumni && printf "\n"
