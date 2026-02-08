@@ -24,8 +24,8 @@ chmod +x install.sh run.sh leaderboard.sh
 
 > What's the next game? 🤔
 
-<img src="./assets/Unknown_Byte-le_Game.png" alt="A nearly black square with three question marks in white text. Freddy Fazbear from the game Five Nights and Freddy's is faintly visible." style="width:50%; height:auto;">
+<img src="./assets/Unknown_Byte-le_Game.png" alt="A nearly black square with three question marks in white text. Freddy Fazbear from the game Five Nights at Freddy's is faintly visible. I took this to mean that the 2025 competition would have a Five Nights at Freddy's theme, which it did not." style="width:50%; height:auto;">
 
 ### Another Relevant Image
 
-<img src="./assets/automation-ftw.jpg" alt="A man is crawling in a desert with the text 'Programmers' underneath him. There are two signs. The one on the left reads 'Automate it in 10 hours: 21 Miles'. The one on the right reads '10 min easy solution: 1/4 mile'. The man is crawling to the left, implying that programmers would rather automate a task in 10 hours, rather than taking the easy 10 minute solution." style="width:50%; height:auto;">
+<img src="./assets/automation-ftw.jpg" alt="A heat-exhausted and sunburnt man is crawling in a desert. The word 'Programmers' is in black text below him. There are two white signs pointing in opposite directions. The one on the left reads 'Automate it in ten hours: twenty-one miles to the left'. The one on the right reads 'Ten minute easy solution: one fourth of a mile to the right'. The man is crawling to the left, implying that programmers would rather automate a task in ten hours, rather than implementing the easy ten minute solution." style="width:50%; height:auto;">
