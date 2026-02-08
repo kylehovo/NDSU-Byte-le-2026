@@ -1,6 +1,7 @@
 # *I* am the Scout here! (Kyle Holter Vogel's NDSU Byte-le 2026 Submission)
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # Copyright (c): 2026, ~~The Scout from Team Fortress 2~~ Kyle Holter Vogel and NDSU ACM
+# Upstream: https://github.com/kylehovo/NDSU-Byte-le-2026
 
 # Despite the fact I probably won't win the alumni category like I wanted,
 # (I'm struggling to come up with a strategy), I learned a lot about myself today.
@@ -13,15 +14,14 @@
 # Let's just say I've learned I'm almost certainly not "normal".
 # And soon, I'll take the psychological tests (and more therapy) to prove it.
 # It's so obvious in hindsight.
-# Who else would get nearly a 4.0 GPA and then dress up like the Scout?
-# Have an insane, undying thirst for knowledge?
 
-# At yet despite all that knowledge, I still need to-do lists and documentation
-# in clear, unambigious language?
+# Who else would get nearly a 4.0 GPA and then dress up like the Scout?
+# Have an insane, undying thirst for knowledge at yet despite it all still 
+# need to-do lists and documentation in clear, unambigious language?
 
 # I've learned today that I can do a lot on my own, but I can't do *everything*.
 # At least not alone.
-# I could spend more time on this, but I already won.
+# I could spend more time on this, but I already feel like I've won.
 
 # I mean look at this year's theme!
 # iirc I was the first one to yap about FNAF during last year's Byte-le.
