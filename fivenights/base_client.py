@@ -22,8 +22,12 @@
 # I've learned today that I can do a lot on my own, but I can't do *everything*.
 # At least not alone.
 # I could spend more time on this, but I already won.
-# Look at this year's theme ffs. I did that (although not alone obviously).
-# Thank you all. For everything.
+
+# I mean look at this year's theme!
+# iirc I was the first one to yap about FNAF during last year's Byte-le.
+# I did that, but I didn't do it alone.
+# This is the best I could do a day alone without driving myself mad.
+# So thank you. Thank you all. For everything.
 
 import heapq
 import random
