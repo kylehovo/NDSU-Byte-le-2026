@@ -6,9 +6,10 @@
 git clone https://github.com/kylehovo/NDSU-Byte-le-2026
 cd NDSU-Byte-le-2026
 
-chmod +x install.sh run.sh
-./install.sh # Requires an internet connection
-./run.sh     # Runs the game and the visualizer
+chmod +x install.sh run.sh leaderboard.sh
+./install.sh     # Requires an internet connection
+./run.sh         # Runs the game and the visualizer
+./leaderboard.sh # Watch the leaderboard
 ```
 
 ## Context
