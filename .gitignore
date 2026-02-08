@@ -1,0 +1,9 @@
+**/__pycache__/
+**/.venv
+**/vID
+fivenights/.venv
+fivenights/docs/
+fivenights/game/
+fivenights/logs/
+fivenights/visualizer/
+fivenights-prev/
