@@ -3,9 +3,12 @@
 ## Building
 
 ```sh
-chmod +x install.sh
+git clone https://github.com/kylehovo/NDSU-Byte-le-2026
+cd NDSU-Byte-le-2026
+
+chmod +x install.sh run.sh
 ./install.sh # Requires an internet connection
-./run.sh
+./run.sh     # Runs the game and the visualizer
 ```
 
 ## Context
