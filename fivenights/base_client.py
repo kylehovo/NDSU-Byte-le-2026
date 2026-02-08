@@ -112,12 +112,10 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
     return None
 
 class Client(UserClient):
-    turnCounter = 0
     luigi = False
 
     def __init__(self):
         super().__init__()
-        
 
     def team_name(self) -> str:
         """
@@ -167,8 +165,7 @@ class Client(UserClient):
         mikeSchmidt.append(nextMove)
         mikeSchmidt.append(nextInteract)
 
-        self.turnCounter += 1
-        print(f"\n{self.turnCounter} - [{mikeSchmidt[0].name}, {mikeSchmidt[1].name}]")
+        print(f"\n{turn} - [{mikeSchmidt[0].name}, {mikeSchmidt[1].name}]")
 
         # Your Client.take_turn() method must return a list of ActionTypes.
         return mikeSchmidt
