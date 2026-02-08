@@ -15,3 +15,9 @@ chmod +x install.sh
 - [NDSU ACM on Twitch](https://www.twitch.tv/ndsu_acm)
 - [UND ACM Website](https://und.acm.org/)
 - [Upstream of This Repo](https://github.com/kylehovo/NDSU-Byte-le-2026)
+
+### The Image
+
+> What's the next game? 🤔
+
+<img src="./assets/Unknown_Byte-le_Game.png" alt="A nearly black square with three question marks in white text. Freddy Fazbear from the game Five Nights and Freddy's is faintly visible." style="width:50%; height:auto;">
